@@ -23,6 +23,7 @@ p {
   font-size: clamp(26px, 3vw, 45px);
 }
 
+/* INDEX - secao-principal */
 .secao-principal {
   gap: clamp(40px, 6vw, 100px);
   padding: clamp(50px, 8vh, 100px) 8%;
@@ -52,6 +53,17 @@ p {
   min-width: 0;
 }
 
+/* ================================
+   SERVIÇOS
+   ================================ */
+.secao-principal:has(.grade-servicos) {
+  padding: clamp(40px, 6vh, 70px) 8%;
+}
+
+/* ================================
+   MEDIA QUERIES
+   ================================ */
+
 @media (max-width: 992px) {
   header {
     flex-direction: column;
@@ -70,6 +82,7 @@ p {
     margin-left: 0;
   }
 
+  /* INDEX */
   .secao-principal {
     flex-direction: column-reverse;
     text-align: center;
@@ -104,6 +117,63 @@ p {
   .navegação-rodape a {
     margin: 0;
   }
+
+  /* SERVIÇOS */
+  .grade-servicos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .card-servico {
+    flex: 0 0 calc(50% - 20px);
+    max-width: 280px;
+  }
+
+  /* HABILIDADES */
+  .grade-habilidades {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .coluna-habilidades {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .divisor {
+    width: 80%;
+    height: 2px;
+    min-height: unset;
+    align-self: center;
+  }
+
+  /* CONTATO */
+  .contato-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contato-info {
+    padding-right: 0;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .contato-divisor {
+    width: 80%;
+    height: 2px;
+    min-height: unset;
+    align-self: center;
+  }
+
+  .contato-form-bloco {
+    padding-left: 0;
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -121,6 +191,7 @@ p {
     letter-spacing: 0.5px;
   }
 
+  /* INDEX */
   .secao-principal {
     padding: 35px 5%;
     gap: 25px;
@@ -151,6 +222,57 @@ p {
   .navegação-rodape a {
     font-size: 14px;
   }
+
+  /* SERVIÇOS */
+  .card-servico {
+    flex: 0 0 100%;
+    max-width: 300px;
+  }
+
+  .card-imagem {
+    width: 180px;
+    height: 180px;
+  }
+
+  .titulo-servicos {
+    font-size: clamp(32px, 8vw, 52px);
+  }
+
+  /* HABILIDADES */
+  .secao-Principal {
+    padding: 40px 5%;
+  }
+
+  .titulo-habilidades {
+    font-size: clamp(32px, 8vw, 52px);
+    margin-bottom: 40px;
+  }
+
+  .coluna-habilidades {
+    padding: 0 10px;
+  }
+
+  .coluna-habilidades ul li {
+    font-size: 16px;
+  }
+
+  /* CONTATO */
+  .secao-contato {
+    padding: 40px 5%;
+  }
+
+  .titulo-contato {
+    font-size: clamp(32px, 8vw, 52px);
+    margin-bottom: 40px;
+  }
+
+  .redes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .botao-enviar {
+    width: 100%;
+  }
 }
 
 @media (max-width: 380px) {
@@ -165,5 +287,16 @@ p {
 
   h1 {
     font-size: 28px;
+  }
+
+  /* SERVIÇOS */
+  .card-imagem {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* CONTATO */
+  .redes-grid {
+    grid-template-columns: 1fr;
   }
 }
