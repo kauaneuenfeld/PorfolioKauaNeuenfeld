@@ -56,7 +56,7 @@ nav ul li a:hover {
   color: #1b98e0;
 }
 
-.secao-servicos {
+.secao-principal {
   padding: 70px 8%;
   min-height: 80vh;
   display: flex;
@@ -68,7 +68,7 @@ nav ul li a:hover {
   font-size: 52px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -76,65 +76,49 @@ nav ul li a:hover {
   color: #1b98e0;
 }
 
-.subtitulo-servicos {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.grade-servicos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  gap: 20px;
-}
-
-.card-servico {
+/* Placeholder projetos */
+.placeholder-projetos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  flex: 1;
-  gap: 14px;
-}
-
-.card-imagem {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 6px solid #1b98e0;
-  background-color: #006494;
-  flex-shrink: 0;
-}
-
-.card-imagem img {
+  justify-content: center;
+  gap: 24px;
+  background-color: rgba(0, 100, 148, 0.15);
+  border: 2px dashed #1b98e0;
+  border-radius: 16px;
+  padding: 60px 40px;
+  max-width: 520px;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  text-align: center;
 }
 
-.card-descricao {
+.placeholder-icone {
+  opacity: 0.8;
+}
+
+.placeholder-texto {
+  font-size: 18px;
   color: #e8f1f2;
-  font-size: 15px;
-  line-height: 1.5;
-  max-width: 240px;
+  line-height: 1.7;
 }
 
-.card-local {
-  color: #f0c040;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.card-preco {
-  color: #1b98e0;
-  font-size: 20px;
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  background-color: #1b98e0;
+  color: #ffffff;
+  text-decoration: none;
   font-weight: 700;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.btn-github:hover {
+  background-color: #006494;
+  transform: translateY(-2px);
 }
 
 footer {

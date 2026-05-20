@@ -86,12 +86,13 @@ nav ul li a:hover {
   align-items: flex-start;
   gap: 0;
   width: 100%;
-  max-width: 900px;
+  max-width: 1100px;
 }
 
 .coluna-habilidades {
   flex: 1;
-  padding: 0 60px;
+  padding: 0 50px;
+  min-width: 0;
 }
 
 .coluna-habilidades h2 {
@@ -106,31 +107,49 @@ nav ul li a:hover {
   color: #1b98e0;
 }
 
-.coluna-habilidades ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  align-items: center;
+/* ── Barras de habilidade ── */
+
+.skill-item {
+  margin-bottom: 22px;
 }
 
-.coluna-habilidades ul li {
+.skill-label {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 14px;
-  font-size: 18px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
   color: #e8f1f2;
-  font-weight: 500;
+  white-space: nowrap;
+  gap: 12px;
 }
 
-.coluna-habilidades ul li::before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #1b98e0;
-  flex-shrink: 0;
+.skill-pct {
+  color: #1b98e0;
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 36px;
+  text-align: right;
 }
+
+.bar-track {
+  background-color: #1a3a50;
+  border-radius: 999px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1b98e0, #57c4ff);
+  width: 0;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 8px rgba(27, 152, 224, 0.5);
+}
+
+/* ── Divisor ── */
 
 .divisor {
   width: 2px;
@@ -138,6 +157,8 @@ nav ul li a:hover {
   align-self: stretch;
   min-height: 300px;
 }
+
+/* ── Footer ── */
 
 footer {
   background-color: #006494;
