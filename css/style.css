@@ -116,7 +116,7 @@ header.scrolled {
 
 .logotipo span {
   background: var(--accent-gradient);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -197,7 +197,7 @@ section {
 
 .section-title span {
   background: var(--accent-gradient);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -306,7 +306,7 @@ section {
 
 .hero-text h1 span {
   background: var(--accent-gradient);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -497,7 +497,7 @@ section {
   font-size: 36px;
   font-weight: 800;
   background: var(--accent-gradient);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 5px;
 }
