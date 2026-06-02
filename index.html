@@ -1,79 +1,597 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kauã | Portfólio</title>
-    <link rel="stylesheet" href="css/StylePortfolio.css" />
-    <link rel="stylesheet" href="css/responsivo.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    
+    <!-- SEO Meta Tags -->
+    <title>Kauã Neuenfeld | Portfólio Profissional</title>
+    <meta name="description" content="Portfólio profissional de Kauã Neuenfeld, Desenvolvedor Full Stack em formação. Conheça minhas habilidades, projetos acadêmicos e entre em contato para parcerias." />
+    <meta name="keywords" content="Kauã Neuenfeld, Portfólio, Desenvolvedor Full Stack, Dev Java, HTML CSS, Programador, SENAI, Jaraguá do Sul" />
+    <meta name="author" content="Kauã Neuenfeld" />
+    
+    <!-- Favicon (Fallback to letter-avatar) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="logotipo">Port<span>fólio</span></div>
-      <nav>
+    <!-- Header / Navigation -->
+    <header id="site-header">
+      <a href="#inicio" class="logotipo" id="nav-logo">
+        <span>&lt;</span>Kauã<span>.dev /&gt;</span>
+      </a>
+      
+      <!-- Mobile Toggle -->
+      <div class="menu-toggle" id="mobile-toggle" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <nav id="site-nav">
         <ul>
-          <li><a href="/PorfolioKauaNeuenfeld/index.html">Inicio</a></li>
-          <li><a href="SobreIndex.html">Sobre</a></li>
-          <li><a href="ServicoIndex.html">Projetos</a></li>
-          <li><a href="HabilidadesIndex.html">Habilidades</a></li>
-          <li><a href="ContatoIndex.html">Contato</a></li>
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="secao-principal">
-      <div class="texto-apresentação">
-        <p class="saudacao">Olá</p>
-        <h1>Eu sou <span>Kauã</span></h1>
-        <p>
-          "Desenvolvedor Full Stack em formação, transformando ideias em
-          soluções digitais. Disponível para freelas e projetos sob demanda."
-        </p>
-
-        <div class="grupo-botoes">
-          <a href="ServicoIndex.html" class="botao botao-contratar"
-            >Ver projetos</a
-          >
-          <a
-            href="https://wa.me/5547999588610?text=Olá,%20Kauã!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
-            class="botao botao-trabalho"
-            >Fale comigo</a
-          >
+    <main>
+      <!-- Hero Section (#inicio) -->
+      <section id="inicio">
+        <div class="hero-text reveal">
+          <div class="welcome-tag">
+            <span class="pulse-dot"></span>
+            Disponível para Projetos & Estudos
+          </div>
+          <h1>Eu sou <span>Kauã Neuenfeld</span></h1>
+          <p>
+            Desenvolvedor Full Stack em formação, transformando ideias em soluções digitais elegantes e eficientes. Estudante do SENAI focado no desenvolvimento moderno do front ao back-end.
+          </p>
+          <div class="btn-group">
+            <a href="#servicos" class="btn btn-primary" id="hero-btn-services">
+              Ver Serviços
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contato" class="btn btn-secondary" id="hero-btn-contact">Fale Comigo</a>
+          </div>
         </div>
-      </div>
 
-      <div class="area-imagem">
-        <div class="moldura-circular">
-          <img src="img/IMG_20250130_135744.jpg" width="500" />
+        <div class="hero-image-wrapper reveal">
+          <div class="hero-image-glow">
+            <div class="hero-image-container">
+              <img src="img/IMG_20250130_135744.jpg" alt="Foto de perfil de Kauã Neuenfeld" id="hero-profile-img" />
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- About Section (#sobre) -->
+      <section id="sobre" class="reveal">
+        <h2 class="section-title">Sobre <span>Mim</span></h2>
+        
+        <div class="about-grid">
+          <div class="about-graphics">
+            <div class="glass-card about-card">
+              <div class="avatar-circle">
+                <img src="img/IMG_20250130_135744.jpg" alt="Kauã Neuenfeld avatar" />
+              </div>
+              <h3>Kauã Neuenfeld</h3>
+              <p>Futuro Dev Full Stack</p>
+              
+              <div class="about-info-tags">
+                <div class="about-tag-item">
+                  <span class="icon">📍</span>
+                  <span class="text">Jaraguá do Sul, SC - Brasil</span>
+                </div>
+                <div class="about-tag-item">
+                  <span class="icon">📚</span>
+                  <span class="text">Estudante no SENAI</span>
+                </div>
+                <div class="about-tag-item">
+                  <span class="icon">🌐</span>
+                  <span class="text">Português (Nativo)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-description">
+            <h2>Construindo o <span>amanhã</span> com linhas de código</h2>
+            <p>
+              Olá! Sou apaixonado por tecnologia e fascinado por como linhas de código podem se transformar em ferramentas capazes de impactar positivamente a vida de milhares de pessoas. Atualmente, estou expandindo minha bagagem técnica e prática como desenvolvedor Full Stack em formação no SENAI.
+            </p>
+            <p>
+              Minhas experiências abrangem a estruturação moderna com HTML, CSS e JavaScript no front-end, a robustez do Java e C no back-end, além de modelagem e manipulação de bancos de dados. Sou movido pelo desafio de aprender novas tecnologias rapidamente e aplicá-las em soluções reais.
+            </p>
+            
+            <div class="about-stats">
+              <div class="glass-card stat-item">
+                <p class="stat-number">10+</p>
+                <p class="stat-label">Projetos de Estudo</p>
+              </div>
+              <div class="glass-card stat-item">
+                <p class="stat-number">1.5k+</p>
+                <p class="stat-label">Horas de Código</p>
+              </div>
+              <div class="glass-card stat-item">
+                <p class="stat-number">100%</p>
+                <p class="stat-label">Foco & Dedicação</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section (#servicos) -->
+      <section id="servicos" class="reveal">
+        <h2 class="section-title">Meus <span>Serviços</span></h2>
+        
+        <div class="services-container">
+          <div class="glass-card services-box">
+            <div class="services-icon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3>Disponibilidade de Serviços</h3>
+            <p>
+              No momento, não estou realizando serviços comerciais externos (freelances), pois estou 100% dedicado aos meus estudos de tecnologia e aos projetos práticos do SENAI.
+            </p>
+            <p style="font-size: 15px; margin-top: -10px;">
+              Entretanto, você pode visualizar todos os meus projetos de estudo no GitHub ou entrar em contato pelo WhatsApp para trocar ideias sobre parcerias futuras!
+            </p>
+            <div class="btn-group">
+              <a href="https://github.com/kauaneuenfeld" target="_blank" class="btn btn-primary" id="services-btn-git">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Meu GitHub
+              </a>
+              <a href="https://wa.me/5547999588610?text=Olá,%20Kauã!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank" class="btn btn-secondary" id="services-btn-whats">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section (#habilidades) -->
+      <section id="habilidades" class="reveal">
+        <h2 class="section-title">Minhas <span>Habilidades</span></h2>
+        
+        <div class="skills-grid">
+          <!-- Technical Skills -->
+          <div class="skills-column">
+            <h3><span>⚡</span> Habilidades Técnicas</h3>
+            <div class="skills-list">
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 &amp; CSS3</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+              </div>
+              
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Fundamentos de JavaScript</span>
+                  <span class="skill-pct">50%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="50"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-pct">55%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="55"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Git &amp; GitHub</span>
+                  <span class="skill-pct">65%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="65"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Lógica de Programação</span>
+                  <span class="skill-pct">70%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="70"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Noções de Redes</span>
+                  <span class="skill-pct">40%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="40"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Introdução a Arduino</span>
+                  <span class="skill-pct">35%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="35"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Skills -->
+          <div class="skills-column">
+            <h3><span>🤝</span> Habilidades Pessoais</h3>
+            <div class="skills-list">
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Trabalho em Equipe</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="90"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Comunicação</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Resolução de Problemas</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="75"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Vontade de Aprender</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="95"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="glass-card skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Proatividade</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section (#contato) -->
+      <section id="contato" class="reveal">
+        <h2 class="section-title">Entre em <span>Contato</span></h2>
+        
+        <div class="contact-wrapper">
+          <!-- Info Panel -->
+          <div class="contact-info-panel">
+            <div class="glass-card contact-card-header">
+              <div class="contact-avatar">K</div>
+              <div class="contact-user-details">
+                <h4>Kauã Neuenfeld</h4>
+                <p>Desenvolvedor em Formação · SENAI</p>
+              </div>
+            </div>
+            
+            <div class="glass-card contact-channels">
+              <div class="channel-item">
+                <div class="channel-icon">✉</div>
+                <div class="channel-content">
+                  <p class="label">E-mail</p>
+                  <a href="mailto:kauaneuenfeld@gmail.com" id="contact-email-link">kauaneuenfeld@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">📞</div>
+                <div class="channel-content">
+                  <p class="label">Telefone</p>
+                  <p class="val">+55 (47) 99958-8610</p>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon">📍</div>
+                <div class="channel-content">
+                  <p class="label">Cidade</p>
+                  <p class="val">Jaraguá do Sul, SC - Brasil</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social block -->
+            <div class="glass-card social-grid">
+              <p style="text-align: center; margin-top: 15px;">Redes Sociais & Profissionais</p>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/kaua-miguel-neuenfeld-5646b4405/" target="_blank" class="social-card" id="social-linkedin">
+                  <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+                
+                <a href="https://github.com/kauaneuenfeld" target="_blank" class="social-card" id="social-github">
+                  <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+
+                <a href="https://www.instagram.com/kauaneuenfeld/" target="_blank" class="social-card" id="social-instagram">
+                  <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  <span>Instagram</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@cenoouraa" target="_blank" class="social-card" id="social-tiktok">
+                  <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31.02 2.61.1 3.86.31v3.52c-.68-.17-1.39-.27-2.12-.29-.02.93-.01 1.87-.01 2.8 1.15.2 2.23.75 3.08 1.57.85.83 1.42 1.9 1.63 3.07a7.712 7.712 0 0 1-5.11 8.58c-1.39.46-2.88.58-4.32.34a7.77 7.77 0 0 1-5.74-6.31c-.34-1.71-.12-3.48.65-5.04a7.86 7.86 0 0 1 5.3-4.36V7.47c-.64.12-1.25.4-1.77.82s-.92.96-1.16 1.59c-.25.64-.32 1.34-.21 2.03.11.69.4 1.33.84 1.85a4.29 4.29 0 0 0 5.41.97c.56-.31 1.02-.78 1.33-1.34.3-.57.44-1.22.4-1.87.01-3.66.01-7.32.01-10.98.66-.02 1.32-.01 1.98-.02.09.84.45 1.63 1.03 2.24.58.62 1.35 1.05 2.19 1.25v3.42c-.89-.19-1.71-.62-2.39-1.23-.67-.62-1.18-1.41-1.46-2.29-.02-1.2-.02-2.39-.02-3.59h-.02z"/></svg>
+                  <span>TikTok</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Panel -->
+          <div class="glass-card contact-form-panel">
+            <h3><span>✉</span> Envie uma Mensagem</h3>
+            <form id="form-contato" action="https://formspree.io/f/mbdbdyvn" method="POST" onsubmit="enviarForm(event)">
+              <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" class="form-input" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btn-enviar" style="width: 100%;">
+                Enviar Mensagem
+              </button>
+              
+              <p class="form-feedback" id="feedback"></p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <div class="conteudo-rodape">
-        <div class="logotipo">Port<span>fólio</span></div>
-        <div class="navegação-rodape">
-          <a
-            href="https://www.linkedin.com/in/kaua-miguel-neuenfeld-5646b4405/"
-            target="_blank"
-            >LinkedIn</a
-          >
-          <a href="https://github.com/kauaneuenfeld" target="_blank">GitHub</a>
-          <a href="https://www.instagram.com/kauaneuenfeld/" target="_blank"
-            >Instagram</a
-          >
-          <a href="mailto:kauaneuenfeld@gmail.com">E-mail</a>
+      <div class="footer-content">
+        <a href="#inicio" class="logotipo">
+          <span>&lt;</span>Kauã<span>.dev /&gt;</span>
+        </a>
+        <div class="footer-links">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#contato">Contato</a>
         </div>
-        <p class="direitos-autorais">
-          &copy; 2026 - Todos os direitos reservados
-        </p>
       </div>
+      <p class="copyright">
+        &copy; 2026 Kauã Neuenfeld. Todos os direitos reservados.
+      </p>
     </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script>
+      // Header scroll state change
+      const header = document.getElementById('site-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Mobile Menu functionality
+      const mobileToggle = document.getElementById('mobile-toggle');
+      const siteNav = document.getElementById('site-nav').querySelector('ul');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      mobileToggle.addEventListener('click', () => {
+        mobileToggle.classList.toggle('active');
+        siteNav.classList.toggle('active');
+      });
+
+      // Close menu when links are clicked and handle active state
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileToggle.classList.remove('active');
+          siteNav.classList.remove('active');
+        });
+      });
+
+      // Intersection Observer for scroll reveal animations and active menu state
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -60% 0px', // Custom margin to highlight active section precisely
+        threshold: 0
+      };
+
+      const sections = document.querySelectorAll('section');
+      const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(sec => {
+        navObserver.observe(sec);
+      });
+
+      // Observer for scroll animation (Fade/Blur reveal)
+      const revealOptions = {
+        root: null,
+        rootMargin: '0px 0px -100px 0px',
+        threshold: 0.1
+      };
+
+      let skillsAnimated = false;
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            
+            // If it's the skills section, animate progress bars
+            if (entry.target.id === 'habilidades' && !skillsAnimated) {
+              animateSkills();
+              skillsAnimated = true;
+            }
+            
+            observer.unobserve(entry.target);
+          }
+        });
+      }, revealOptions);
+
+      document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
+      });
+
+      // Smooth skill bar animations
+      function animateSkills() {
+        document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+          const width = bar.getAttribute('data-width');
+          bar.style.width = width + '%';
+        });
+      }
+
+      // Tilt effect for glass cards (subtle 3D hover)
+      const glassCards = document.querySelectorAll('.glass-card');
+      
+      glassCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left; // x position inside element
+          const y = e.clientY - rect.top;  // y position inside element
+          
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          
+          // Calculate tilt angle (max 4 degrees)
+          const tiltX = (centerY - y) / centerY * 4;
+          const tiltY = (x - centerX) / centerX * 4;
+          
+          card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-5px)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+        });
+      });
+
+      // Contact Formspree submission handler
+      async function enviarForm(e) {
+        e.preventDefault();
+        const btn = document.getElementById("btn-enviar");
+        const feedback = document.getElementById("feedback");
+        const form = document.getElementById("form-contato");
+
+        btn.disabled = true;
+        const originalBtnText = btn.textContent;
+        btn.textContent = "Enviando...";
+        feedback.textContent = "";
+
+        const data = {
+          nome: document.getElementById("nome").value,
+          email: document.getElementById("email").value,
+          mensagem: document.getElementById("mensagem").value,
+        };
+
+        try {
+          const response = await fetch("https://formspree.io/f/mbdbdyvn", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          if (response.ok) {
+            feedback.textContent = "✅ Mensagem enviada com sucesso! Em breve entrarei em contato.";
+            feedback.style.color = "var(--accent-blue)";
+            form.reset();
+          } else {
+            feedback.textContent = "❌ Algo deu errado. Tente novamente ou me chame no WhatsApp/E-mail.";
+            feedback.style.color = "#ff4d4d";
+          }
+        } catch (err) {
+          feedback.textContent = "❌ Erro de conexão. Verifique sua rede e tente novamente.";
+          feedback.style.color = "#ff4d4d";
+        }
+
+        btn.textContent = originalBtnText;
+        btn.disabled = false;
+      }
+    </script>
   </body>
 </html>
