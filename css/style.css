@@ -116,8 +116,10 @@ header.scrolled {
 
 .logotipo span {
   background: var(--accent-gradient);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 nav ul {
@@ -197,8 +199,10 @@ section {
 
 .section-title span {
   background: var(--accent-gradient);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 /* Buttons */
@@ -306,8 +310,10 @@ section {
 
 .hero-text h1 span {
   background: var(--accent-gradient);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .hero-text p {
@@ -497,8 +503,10 @@ section {
   font-size: 36px;
   font-weight: 800;
   background: var(--accent-gradient);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
   margin-bottom: 5px;
 }
 
@@ -663,9 +671,13 @@ section {
 
 .contact-card-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  padding: 20px;
+  padding-bottom: 25px;
   border-bottom: 1px solid var(--glass-border);
 }
 
